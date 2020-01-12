@@ -7,37 +7,6 @@ export const Wrapper = styled.View`
   background-color: #191920;
 `;
 
-export const HeaderBox = styled.ImageBackground.attrs(props => ({
-  source: props.source,
-}))`
-  height: ${heightPercentageToDP('15%')}px;
-  width: ${widthPercentageToDP('1000%')}px;
-  padding: 20px;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-`;
-
-export const Logo = styled.Image.attrs(props => ({
-  source: props.source,
-}))``;
-
-export const CartAlert = styled.View`
-  position: absolute;
-  left: 17px;
-  top: -10px;
-  z-index: 1;
-  border-radius: 18px;
-  padding: 5px;
-  background-color: #7159c1;
-`;
-
-export const CartAlertText = styled.Text`
-  color: #FFF;
-  margin: 2px 5px;
-  font-size: 8px;
-`;
-
 export const ProductList = styled.FlatList.attrs(props => ({
   showsHorizontalScrollIndicator: false,
   horizontal: true,
@@ -71,7 +40,7 @@ export const ProductValue = styled.Text`
   font-weight: bold;
 `;
 
-export const ButtonBox = styled.View`
+export const ButtonBox = styled.TouchableOpacity`
   overflow: hidden;
   margin-top: auto;
   height: 12%;
