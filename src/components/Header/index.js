@@ -20,9 +20,11 @@ export default function Header() {
       <View style={{flex: 1, marginLeft: 50}}>
         <TouchableOpacity onPress={() => NavigationService.navigate('Cart')}>
           <Icon name="shopping-basket" color="#FFF" size={30} />
-          <S.CartAlert>
-            <S.CartAlertText>{cartSize}</S.CartAlertText>
-          </S.CartAlert>
+          {cartSize > 0 && (
+            <S.CartAlert>
+              <S.CartAlertText>{cartSize}</S.CartAlertText>
+            </S.CartAlert>
+          )}
         </TouchableOpacity>
       </View>
     </S.HeaderBox>

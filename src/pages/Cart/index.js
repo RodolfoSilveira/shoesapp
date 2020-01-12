@@ -86,6 +86,9 @@ export default function Cart() {
           <S.Title>Total</S.Title>
           <S.Total>{total}</S.Total>
         </S.FooterBox>
+        <S.Button>
+          <S.TextButton>FINALIZAR PEDIDO</S.TextButton>
+        </S.Button>
       </S.CartBox>
     </S.Wrapper>
   );

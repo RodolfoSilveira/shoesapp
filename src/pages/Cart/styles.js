@@ -93,6 +93,19 @@ export const Title = styled.Text`
 `;
 
 export const Total = styled.Text`
-  font-size: 22px;
+  font-size: 30px;
   font-weight: bold;
+`;
+
+export const Button = styled.TouchableOpacity`
+  margin-top: 40px;
+  background-color: #7159c1;
+  border-radius: 4px;
+  padding: 20px;
+`;
+
+export const TextButton = styled.Text`
+  color: #FFF;
+  font-weight: bold;
+  text-align: center;
 `;
